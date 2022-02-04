@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		323DD09827AD6BBC0094846B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DD09727AD6BBC0094846B /* AppDelegate.swift */; };
 		323DD09A27AD6BBC0094846B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DD09927AD6BBC0094846B /* SceneDelegate.swift */; };
-		323DD09C27AD6BBC0094846B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DD09B27AD6BBC0094846B /* ViewController.swift */; };
 		323DD09F27AD6BBC0094846B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323DD09D27AD6BBC0094846B /* Main.storyboard */; };
 		323DD0A127AD6BBF0094846B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323DD0A027AD6BBF0094846B /* Assets.xcassets */; };
 		323DD0A427AD6BBF0094846B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323DD0A227AD6BBF0094846B /* LaunchScreen.storyboard */; };
+		323DD0B327AD6DC70094846B /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DD0B227AD6DC70094846B /* BookController.swift */; };
+		323DD0B527AD6E290094846B /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DD0B427AD6E290094846B /* BookModel.swift */; };
+		323DD0B727AD77B80094846B /* BookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DD0B627AD77B80094846B /* BookListTableViewController.swift */; };
+		323DD0B927AD77DF0094846B /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DD0B827AD77DF0094846B /* BookDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		323DD09427AD6BBC0094846B /* Bookshelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookshelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		323DD09727AD6BBC0094846B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		323DD09927AD6BBC0094846B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		323DD09B27AD6BBC0094846B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		323DD09E27AD6BBC0094846B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		323DD0A027AD6BBF0094846B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		323DD0A327AD6BBF0094846B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		323DD0A527AD6BBF0094846B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323DD0B227AD6DC70094846B /* BookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
+		323DD0B427AD6E290094846B /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		323DD0B627AD77B80094846B /* BookListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewController.swift; sourceTree = "<group>"; };
+		323DD0B827AD77DF0094846B /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 		323DD0AE27AD6C740094846B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				323DD0B427AD6E290094846B /* BookModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,7 +110,8 @@
 		323DD0AF27AD6C7E0094846B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				323DD09B27AD6BBC0094846B /* ViewController.swift */,
+				323DD0B627AD77B80094846B /* BookListTableViewController.swift */,
+				323DD0B827AD77DF0094846B /* BookDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -111,6 +119,7 @@
 		323DD0B127AD6C9A0094846B /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				323DD0B227AD6DC70094846B /* BookController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -186,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323DD09C27AD6BBC0094846B /* ViewController.swift in Sources */,
+				323DD0B527AD6E290094846B /* BookModel.swift in Sources */,
 				323DD09827AD6BBC0094846B /* AppDelegate.swift in Sources */,
+				323DD0B927AD77DF0094846B /* BookDetailViewController.swift in Sources */,
+				323DD0B727AD77B80094846B /* BookListTableViewController.swift in Sources */,
+				323DD0B327AD6DC70094846B /* BookController.swift in Sources */,
 				323DD09A27AD6BBC0094846B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bookshelf/Info.plist;
+				INFOPLIST_FILE = Bookshelf/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -365,7 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bookshelf/Info.plist;
+				INFOPLIST_FILE = Bookshelf/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
