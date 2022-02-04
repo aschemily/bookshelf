@@ -56,15 +56,63 @@
 		323DD09627AD6BBC0094846B /* Bookshelf */ = {
 			isa = PBXGroup;
 			children = (
-				323DD09727AD6BBC0094846B /* AppDelegate.swift */,
-				323DD09927AD6BBC0094846B /* SceneDelegate.swift */,
-				323DD09B27AD6BBC0094846B /* ViewController.swift */,
-				323DD09D27AD6BBC0094846B /* Main.storyboard */,
-				323DD0A027AD6BBF0094846B /* Assets.xcassets */,
-				323DD0A227AD6BBF0094846B /* LaunchScreen.storyboard */,
-				323DD0A527AD6BBF0094846B /* Info.plist */,
+				323DD0AE27AD6C740094846B /* Models */,
+				323DD0AD27AD6C6D0094846B /* Controllers */,
+				323DD0AC27AD6C590094846B /* Views */,
+				323DD0AB27AD6C240094846B /* Resources */,
 			);
 			path = Bookshelf;
+			sourceTree = "<group>";
+		};
+		323DD0AB27AD6C240094846B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				323DD09727AD6BBC0094846B /* AppDelegate.swift */,
+				323DD09927AD6BBC0094846B /* SceneDelegate.swift */,
+				323DD0A027AD6BBF0094846B /* Assets.xcassets */,
+				323DD0A527AD6BBF0094846B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		323DD0AC27AD6C590094846B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				323DD09D27AD6BBC0094846B /* Main.storyboard */,
+				323DD0A227AD6BBF0094846B /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		323DD0AD27AD6C6D0094846B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				323DD0B127AD6C9A0094846B /* ModelControllers */,
+				323DD0AF27AD6C7E0094846B /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		323DD0AE27AD6C740094846B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		323DD0AF27AD6C7E0094846B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				323DD09B27AD6BBC0094846B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		323DD0B127AD6C9A0094846B /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
